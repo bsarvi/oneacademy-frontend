@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import AdminLayout from "../components/layout/AdminLayout";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <AdminLayout>
+      <Component {...pageProps} />
+    </AdminLayout>
+  );
 }
 
-export default MyApp
+export default MyApp;
